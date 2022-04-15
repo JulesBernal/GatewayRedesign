@@ -1,0 +1,147 @@
+/* resetting the css with "*"*/
+*
+{
+  margin:  0;
+  padding:  0;
+}
+body{
+  margin:  0;
+  min-height:  100vh;
+
+  position:  relative;
+  overflow-x:  hidden;  
+  padding-bottom:  2.3em;
+}
+#wrap{
+  padding-bottom:  2.3em;
+}
+header{
+  background-color:  rgb(0, 142, 214);
+  color:  white;
+  padding:  5px;
+  text-align:  center;
+}
+footer{
+  background-color:  rgb(0, 142, 214);
+  width:  100%;
+  color:  white;
+  text-align:  center;
+  position:  absolute;
+  bottom:  0;
+  height:  2.3em;
+  padding-bottom:0;
+}
+
+/*    All things of the navigation bar.  */
+nav{
+  padding:  5px;
+ position:  sticky;
+  background:  pink;
+  top:  0;
+  z-index:  9999;
+}
+nav a{
+  text-decoration: none;
+}
+
+.stickyBar{
+   text-decoration: none;
+}
+ul{
+  padding:  0;
+  list-style:  none;
+}
+ul > li{
+  display: inline-block;
+}
+
+
+aside{
+  float:  right;
+  position:relative;
+  width:  400px;
+}
+aside.attract{
+  float:  right;
+  width:  400px;
+}
+
+/*overflow for the Attractions page in order to allow content to display correctly.*/
+#edMall{
+  overflow:  auto;
+}
+
+#artGallery{
+  overflow:  auto;
+}
+
+#Garden{
+  overflow:  auto;
+}
+
+#edZoo{
+  overflow:  auto;
+}
+#theLeg{
+  overflow:  auto;
+}
+
+article.sources{
+  text-align:center;
+}
+
+form{
+  text-align:center;
+}
+
+/* Slide show on index page*/
+
+#oliveSlide figure{
+  position: relative;
+  left:  0;
+  width:  400%;
+  animation-name: movie;
+  animation-duration: 24s;
+  animation-iteration-count:  infinite;
+  border-style:  solid;
+  padding:  .5vh;
+  height:  90vh;
+  z-index:  2;
+ background-color:  cyan;
+  border-left:  solid cyan 20vw;
+}
+
+
+/*Affects the images size and amongst other things*/
+#oliveSlide figure img{
+  height:  90vh;
+  padding-right:  20vw;
+  object-fit:  contain;
+}
+
+
+/*The actual animation and the keyframes for each step.*/
+@keyframes movie{
+   0%{
+    left:  0;
+    }
+  16.7%{
+    left:  0;
+     }
+  33.4%{
+    left:  -82%;
+    }
+  50.1%{
+    left:  -82%;
+    }
+  66.8%{
+    left:  -163%;
+  }
+  83.5%{
+    left:  -163%;
+  }
+  100%{
+    left:  0;
+  }
+  }
+}
